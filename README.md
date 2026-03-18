@@ -1,6 +1,6 @@
-# ECMWF S2S Reforecast: Predictability & Uncertainty Analysis
-This project explores the predictability of the Northern Hemisphere 300 hPa Geopotential Height ($Z300$) using **ECMWF S2S (Subseasonal-to-Seasonal) reforecast data**.
-The analysis focuses on quantifying forecast uncertainty growth and identifying the most predictable atmospheric modes through Principal Component Analysis (PCA) and Average Predictable Time (APT) analysis.
+# ECMWF S2S Reforecast: Predictable Component Analysis
+This project explores the predictability of the Northern Hemisphere 300 hPa Geopotential Height ($Z300$) using ECMWF S2S (Subseasonal-to-Seasonal) reforecast data.
+The analysis focuses on quantifying forecast uncertainty growth and identifying **the most predictable atmospheric modes** through Principal Component Analysis (PCA) and Average Predictable Time (APT) analysis.
 
 ## Project Overview
 In numerical weather prediction, uncertainty increases with lead time due to the chaotic nature of the atmosphere. 
@@ -11,8 +11,8 @@ This project implements a full pipeline to:
 4. **Identify** optimal predictable modes (APTM) that maximize the signal-to-noise ratio over time
 
 ## Tech Stack
-- Data Processing: {Numpy}, {SciPy}, {netCDF4}
-- Machine Learning: {Scikit-learn} (PCA)
-- Visualization: {Matplotlib}, {Cartopy} (Geospatial projections)
+- Data Processing: `Numpy`, `SciPy`, `netCDF4`
+- Machine Learning: `Scikit-learn` (PCA)
+- Visualization: `Matplotlib`, `Cartopy` `Geospatial projections`
 
 ## Analytical Pipeline
