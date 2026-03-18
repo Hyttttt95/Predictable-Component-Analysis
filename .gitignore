@@ -1,20 +1,17 @@
-# --- Jupyter Notebook 相關 ---
-.ipynb_checkpoints/     # 這是自動存檔產生的隱藏夾，絕對不要推上去
+.ipynb_checkpoints/     
 */.ipynb_checkpoints/*
 checkpoint_*.ipynb
 
-summer*.ipynb           # 排除所有 summer 開頭的 notebook
-summer*/                # 排除 summer 開頭的資料夾
+summer*.ipynb           
+summer*/                
 
-# --- 數據與暫存檔 ---
-*.csv                   # 如果數據太大，建議排除
-*.npy                   # Python 數值檔
-*.pkl                   # Pickle 序列化檔
-*.mat                   # MATLAB 檔案
-*.log                   # 執行紀錄
+*.csv                   
+*.npy                   
+*.pkl                   
+*.mat                   
+*.log                   
 
-# --- 系統與環境 ---
-.DS_Store               # Mac 系統產生的隱藏檔
-__pycache__/            # Python 編譯暫存
-.venv/                  # 虛擬環境
-.env                    # 存放私密金鑰 (API Key) 的檔案
+.DS_Store               
+__pycache__/            
+.venv/                  
+.env
