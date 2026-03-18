@@ -13,6 +13,6 @@ This project implements a full pipeline to:
 ## Tech Stack
 - Data Processing: `Numpy`, `SciPy`, `netCDF4`
 - Machine Learning: `Scikit-learn` (PCA)
-- Visualization: `Matplotlib`, `Cartopy` `Geospatial projections`
+- Visualization: `Matplotlib`, `Cartopy` (Geospatial projections)
 
 ## Analytical Pipeline
