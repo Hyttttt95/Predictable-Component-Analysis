@@ -19,5 +19,7 @@ The entire analysis workflow is documented in `code.ipynb`. The pipeline consist
 4. **Area-Weighted PCA:** Extracting dominant EOFs with a $\sqrt{\cos\phi}$ geometric correction.
 5. **APTM Identification:** Solving for the most predictable linear combinations of PCs.
 
+Note on Reproducibility: The raw ECMWF S2S reforecast data used in this project is not included in this repository due to its large file size. As a result, the provided Jupyter Notebook cannot be executed without local access to the required `.nc` files. However, the notebook remains as a comprehensive record of the analytical pipeline and methodology.
+
 ## Contribution
 This is a research project. Suggestions for improving the predictability operator or alternative dimensionality reduction techniques are welcome.
