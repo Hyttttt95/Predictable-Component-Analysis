@@ -16,10 +16,6 @@ The entire analysis workflow is documented in `code.ipynb`. The pipeline consist
 1. **Data Aggregation:** Synthesizing raw NetCDF files into a structured 6D-Tensor.
 2. **Climatology & Anomaly Calculation:** Isolating predictable signals by removing the seasonal mean.
 3. **Uncertainty Visualization:** Modeling ensemble dispersion using Gaussian PDFs.
-   <div align="center">
-  <img src="./images/Reforecast_Data_Visualization.png" width="600">
-  <p>Figure 1: **Evolution of the $Z300$ anomaly distribution.** The sequence of Gaussian PDFs visualizes the growth of ensemble spread and forecast uncertainty over 47 lead days.</p>
-  </div>
 4. **Area-Weighted PCA:** Extracting dominant EOFs with a $\sqrt{\cos\phi}$ geometric correction.
 5. **APTM Identification:** Solving for the most predictable linear combinations of PCs.
 
