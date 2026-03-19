@@ -1,18 +1,23 @@
 # ECMWF S2S Reforecast: Predictable Component Analysis
-This project explores the predictability of the Northern Hemisphere 300 hPa Geopotential Height ($Z300$) using ECMWF S2S (Subseasonal-to-Seasonal) reforecast data.
-The analysis focuses on quantifying forecast uncertainty growth and identifying **the most predictable atmospheric modes** through Principal Component Analysis (PCA) and Average Predictable Time (APT) analysis.
+  A scientific pipeline to analyze atmospheric predictability and identify optimal predictable modes using ECMWF S2S data.
+This project explores the predictability of the Northern Hemisphere 300 hPa Geopotential Height ($Z300$) by quantifying forecast uncertainty and identifying **Average Predictable Time (APT)** modes.
 
-## Project Overview
-In numerical weather prediction, uncertainty increases with lead time due to the chaotic nature of the atmosphere. 
-This project implements a full pipeline to:
-1. **Process** high-dimensional S2S reforecast datasets
-2. **Visualize** the evolution of ensemble spreads using 3D probability density functions
-3. **Extract** dominant spatial patterns via Area-Weighted PCA
-4. **Identify** optimal predictable modes (APTM) that maximize the signal-to-noise ratio over time
+## Background
+In subseasonal forecasting, atmospheric chaos leads to rapid uncertainty growth. This project implements a pipeline to filter noise, correct for Earth's geometry, and isolate the most predictable atmospheric patterns, such as the **PNA (Pacific–North American)** teleconnection.
 
-## Tech Stack
-- Data Processing: `Numpy`, `SciPy`, `netCDF4`
-- Machine Learning: `Scikit-learn` (PCA)
-- Visualization: `Matplotlib`, `Cartopy` (Geospatial projections)
+## Install
+This analysis requires Python 3.x and the following libraries:
+```bash
+pip install numpy scipy netCDF4 scikit-learn matplotlib cartopy
+```
 
-## Analytical Pipeline
+## Usage
+The entire analysis workflow is documented in `code.ipynb`. The pipeline consists of:
+1. **Data Aggregation:** Synthesizing raw NetCDF files into a structured 6D-Tensor.
+2. **Climatology & Anomaly Calculation:** Isolating predictable signals by removing the seasonal mean.
+3. **Uncertainty Visualization:** Modeling ensemble dispersion using Gaussian PDFs.
+4. **Area-Weighted PCA:** Extracting dominant EOFs with a $\sqrt{\cos\phi}$ geometric correction.
+5. **APTM Identification:** Solving for the most predictable linear combinations of PCs.
+
+## Contribution
+This is a research project. Suggestions for improving the predictability operator or alternative dimensionality reduction techniques are welcome.
